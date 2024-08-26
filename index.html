@@ -10,9 +10,10 @@
   <style>
     .container {
       position: relative;
-      height: 100vh;
+      height: 100%;
       max-width: 100%;
-      overflow: hidden;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
 
     .container::before {
@@ -67,15 +68,15 @@
       background-color: #FBC5A1;
       border-color: #FBC5A1;
       color: #242021;
-      
     }
 
     .btn-primary:hover {
       background-color: #fab07f;
       border-color: #fab07f;
-      color: #242021;}
+      color: #242021;
+    }
 
-    .btn-primary:active{
+    .btn-primary:active {
       background-color: #f98e46;
       color: #242021;
       border: 1px solid #f98e46;
@@ -89,53 +90,103 @@
     }
 
     .head{color: white;
-    font-weight: bold;
-    line-height: 1;
-    margin-bottom: 3;}
+      font-weight: bold;
+      line-height: 1;
+      margin-bottom: 3;}
 
     .main{margin-top: -18px;
-    }
+    margin-left: -20px;}
     .text{margin-top: -100px;}
     .spacing{margin-bottom: 30px;}
+    .cake{margin-inline: auto;}
+
+
+    .featured-item img {
+      width: 100%;
+      height: 60%;
+      border-radius: 0.5rem;
+    }
+
+    .featured-item h3 {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    .featured-item p {
+      margin-top: 0.5rem;
+      color: #6c757d;
+    }
+
+    .CONTAINER2{padding: 2rem;}
+
+    .featured-section{background-color: #242021;}
+    .body{color: grey;}
+    .row{color: white;}
+
+    .testimonials-section {background-color: #FBC5A135;}
+    .testimonial-item{background-color: #242021;}
+    .testimonials-section h2{color: #242021;}
+
+    .bestsellers-section{background-color: #242021;}
+    .row{padding: 2rem;}
+
     
+    .order-step{background-color: #242021;}
+    .how-to-order-section h2{color: #242021;}
 
-   
+    .how-to-order-section {
+      padding: 4rem 0;
+      background-color: #FBC5A135;
+    }
 
+    .order-step {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
     
-
     
-
   </style>
 </head>
+
+
+
 
 <body>
   <div class="container">
     <div class="overlay"></div>
     <div class="content">
-      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <div class="col-md-3 mb-2 mb-md-0">
-          <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a href="/" class="navbar-brand">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#FBC5A1" class="bi bi-cake" viewBox="0 0 16 16">
               <path d="m7.994.013-.595.79a.747.747 0 0 0 .101 1.01V4H5a2 2 0 0 0-2 2v3H2a2 2 0 0 0-2 2v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a2 2 0 0 0-2-2h-1V6a2 2 0 0 0-2-2H8.5V1.806A.747.747 0 0 0 8.592.802zM4 6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v.414a.9.9 0 0 1-.646-.268 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0A.9.9 0 0 1 4 6.414zm0 1.414c.49 0 .98-.187 1.354-.56a.914.914 0 0 1 1.292 0c.748.747 1.96.747 2.708 0a.914.914 0 0 1 1.292 0c.374.373.864.56 1.354.56V9H4zM1 11a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.793l-.354.354a.914.914 0 0 1-1.293 0 1.914 1.914 0 0 0-2.707 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0L1 11.793zm11.646 1.854a1.915 1.915 0 0 0 2.354.279V15H1v-1.867c.737.452 1.715.36 2.354-.28a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.708 0a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.707 0a.914.914 0 0 1 1.293 0Z"/>
             </svg>
           </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Our Menu</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Cooking Lessons</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+            </ul>
+            <div class="d-flex">
+              <button type="button" class="btn btn-outline-primary me-2">Login</button>
+              <button type="button" class="btn btn-primary">Sign-up</button>
+            </div>
+          </div>
         </div>
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2">Home</a></li>
-          <li><a href="#" class="nav-link px-2 link-secondary">About</a></li>
-          <li><a href="#" class="nav-link px-2 link-secondary">Our Menu</a></li>
-          <li><a href="#" class="nav-link px-2 link-secondary">Cooking Lessons</a></li>
-          <li><a href="#" class="nav-link px-2 link-secondary">Contact Us</a></li>
-        </ul>
-        <div class="col-md-3 text-end">
-          <button type="button" class="btn btn-outline-primary me-2">Login</button>
-          <button type="button" class="btn btn-primary">Sign-up</button>
-        </div>
-      </header>
+      </nav>
+
       <div class="text col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="./cake.png" class="d-block mx-lg-auto img-fluid" alt="Cake" width="500" height="300" loading="lazy" margin-inline="auto">
+          <div class="cake col-10 col-sm-8 col-lg-6">
+            <img src="./cake.png" class="d-block mx-lg-auto img-fluid" alt="Cake" width="500" height="300" loading="lazy">
           </div>
           <div class="main col-lg-6">
             <h1 class="head spacing">The Best Chocolate Cake Recipe!</h1>
@@ -149,6 +200,120 @@
       </div>
     </div>
   </div>
+
+  <section class="featured-section">
+    <div class="CONTAINER2">
+      <div class="text-center mb-5">
+        <h2 class="head">Featured Cakes</h2>
+        <p class="body">Explore our collection and discover the perfect cake to make your moments even sweeter.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 featured-item">
+          <img src="./image 669.png" alt="Chocolate Cake">
+          <h3>Chocolate Delight</h3>
+          <p>Rich and creamy chocolate cake with layers of smooth ganache.</p>
+        </div>
+        <div class="col-md-4 featured-item">
+          <img src="./delicious-cake-with-fruits.jpg" alt="Vanilla Cake">
+          <h3>Vanilla Daisy Dream</h3>
+          <p>Classic vanilla cake with a hint of almond with buttercream frosting.</p>
+        </div>
+        <div class="col-md-4 featured-item">
+          <img src="./red-velvet-cake-heart-shape-garnished-with-raspberries-mint-leaves.jpg" alt="Strawberry Cake">
+          <h3>Strawberry Fields</h3>
+          <p>Light and fluffy strawberry cake made with fresh strawberries and cream.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section py-5">
+    <div class="container3">
+      <div class="text-center mb-5">
+        <h2 class="head">What Our Customers Say</h2>
+        <p class="body">Hear from our satisfied customers who have enjoyed our delicious cakes.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial-item p-4">
+            <p>"The chocolate cake was absolutely divine! Best cake I've ever had."</p>
+            <p><strong>- Jane Doe</strong></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-item p-4">
+            <p>"Our wedding cake was not only beautiful but also delicious. Thank you so much!"</p>
+            <p><strong>- John Smith</strong></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-item p-4">
+            <p>"I loved the variety of flavors. The strawberry fields cake is my new favorite."</p>
+            <p><strong>- Sarah Johnson</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bestsellers-section py-5">
+    <div class="container4">
+      <div class="text-center mb-5">
+        <h2 class="head">All Time Bestsellers</h2>
+        <p class="body">Check out our most popular cakes that customers love.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 featured-item">
+          <img src="./view-delicious-dessert.jpg" alt="Bestseller Cake">
+          <h3>Chocolate Heaven</h3>
+          <p>Indulgent chocolate cake with rich layers of ganache.</p>
+        </div>
+        <div class="col-md-4 featured-item">
+          <img src="./delicious-cake-slice-plate.jpg" alt="Bestseller Cake">
+          <h3>Vanilla Creamy Bliss</h3>
+          <p>Light and fluffy vanilla cake with a creamy frosting.</p>
+        </div>
+        <div class="col-md-4 featured-item">
+          <img src="./zoom-view-little-round-cake-decorated-with-strawberries-white-plate.jpg" alt="Bestseller Cake">
+          <h3>Red Velvet Delight</h3>
+          <p>Classic red velvet cake with a smooth cream cheese frosting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="how-to-order-section py-5">
+    <div class="container5">
+      <div class="text-center mb-5">
+        <h2 class="head">How to Order</h2>
+        <p class="body">Follow these simple steps to place your order and enjoy our delicious cakes.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="order-step p-4">
+            <h3>Step 1</h3>
+            <p>Select your favorite cake from our menu.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="order-step p-4">
+            <h3>Step 2</h3>
+            <p>Choose your delivery date and time.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="order-step p-4">
+            <h3>Step 3</h3>
+            <p>Make a payment and wait for your delicious cake to arrive!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
